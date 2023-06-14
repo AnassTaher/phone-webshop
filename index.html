@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Phone Webshop</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Assigment 2">
+        <meta name="author" content="Bilal Derraz">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <nav id="Home" class="navbar">
+                <div class="brand-title"><span>PHONE</span></div>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#">Acount</a></li>
+                    <li><a href="#">Settings</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+        </header>
+
+        <section id = "video_container">
+            <iframe id = "youtube_video" src="https://www.youtube.com/embed/n7XK3TvDOzM"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+
+        <div class="section_title">Best sellers</div>
+        <section id = "top_5_phones">            
+            <form action = "https://wt.ops.labs.vu.nl/api22/3daa1c8a" method = "post" class = "phoneform" target="_blank" id="form_phones">
+            <table id="table_phones">
+                <caption id = "top_5_caption">Top 5 Phones</caption>
+                <thead>
+                    <tr>
+                        <td></td>
+                        <td>Brand</td>
+                        <td>Model</td>
+                        <td><abbr title="Operating system">OS</abbr></td>
+                        <td>Screensize</td>
+                        <td>Image</td>
+                    </tr>
+                </thead>
+                <tbody id="table_content">
+                    <tr id = "top_5_form_row">
+                        <td><input type = "submit" id = "submit_button" value="submit">    </td>
+                        <td><input type = "text" id = "brand" name = "brand" placeholder = "brand..." required></td>
+                        <td><input type = "text" id = "model" name = "model" placeholder = "model..." required></td>
+                        <td><input type = "text" id = "os" name = "os" placeholder = "os..." required></td>
+                        <td><input type = "number" id = "screensize" name = "screensize" placeholder = "screensize..." required></td>
+                        <td><input type = "url" id = "image" name = "image" placeholder = "image..." required></td>           
+                    </tr>
+                </tbody>
+            </table>
+            </form>
+            <button type = "button" id = "reset_button">RESET</button>
+        </section>
+
+        <div class="section_title">Why Choose Us</div>
+        <section id = "why_us_container">
+            <div class = "why_us">
+                <h2><em>Why Us</em></h2>
+                <dl>
+                    <dt><img class = "icon" src = "https://cdn1.iconfinder.com/data/icons/ecommerce-14/512/fast-delivery-truck-packages-transport-transportation-time-schedule-clock-512.png" alt = "fast transport icon">Fast transprot</dt>
+                    <dd>We have fast transport</dd>
+
+                    <dt><img class = "icon" src = "https://cdn2.iconfinder.com/data/icons/communication-228/100/Customer-service-05-512.png" alt = "customer service icon">Customer service</dt>
+                    <dd>We have customer service</dd>
+                    
+                    <dt><img class = "icon" src = "https://cdn4.iconfinder.com/data/icons/online-shopping-7/494/shop28-512.png" alt = "warranty protection icon">Warranty protection</dt>
+                    <dd>We have warranty protection</dd>
+                </dl>
+            </div>
+                <div class = "why_us">
+                    <form>
+                        <h2>What are you looking for</h2>
+
+                        <label for = "telsim">Phone and sim</label>
+                        <input type = "radio" name = "phone" id = "telsim">
+                        
+                        <label for = "tel">Phone</label>
+                        <input type = "radio" name = "phone" id = "tel">
+                        
+                        <label for = "sim">Sim Only</label>
+                        <input type = "radio" name = "phone" id = "sim">
+
+                        <br><br>
+
+                        <label for = "search_num">Phone number</label>
+                        <input type = "tel" name = "search_num" id = "search_num" placeholder= "(06)12345678">
+
+                        <br><br>
+
+                        <label for = "search_phone">Which phone?</label>
+                        <input type = "search" name = "search_phone" id = "search_phone" placeholder= "Iphone X">
+
+                        <br><br>
+
+                        <label for = "mail_phone">E-mail: </label>
+                        <input type = "email" name = "mail_phone" id = "mail_phone" placeholder= "example@hotmail.com">
+                    </form> 
+                </div>
+        </section>    
+
+        <div class="section_title">Prepaid sim options</div>
+        <section id = "sim_only_container">
+            <div class = "sim_only">
+                <h1>Best prepaid options ranked</h1>
+                <ol>
+                    <li><strong>Lebara</strong></li>
+                    <li>Tele 2</li>
+                    <li>Simyo</li>
+                    <li>Youfone</li>
+                    <li>Simpel</li>
+                </ol>
+                
+            </div>
+            <div class = sim_only>
+                <table id = "sim_only_table">
+                    <thead>
+                        <tr>
+                            <td>Lebara</td>
+                            <td>Tele2</td>
+                            <td>Simyo</td>
+                            <td>Youfone</td>
+                            <td>Simpel</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class = "lighblue_row">
+                            <td>Subscription(years)</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>1</Td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                            <td>&euro;7,50</td>
+                            <td>&euro;10,00</td>
+                            <td>&euro;12,00</Td>
+                            <td>&euro;6,50</td>
+                            <td>&euro;7,50</td>
+                        </tr>
+                        <tr class = "lighblue_row">
+                            <td>4G</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                            <td>yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        <div class="section_title">Our services</div>
+        <section>
+            <div class="service">
+                <div class="delivery">
+                    <div class="content">
+                        <figure>
+                            <img src= "https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Fast delivery pictogram">
+                            <figcaption>Fast delivery</figcaption>
+                        </figure>
+                        <p>Order today, recieve tomorrow!</p>
+                    </div>
+                </div>
+                <div class="availability">
+                    <div class="content">
+                        <figure>
+                            <img src= "https://cdn-icons-png.flaticon.com/512/709/709790.png" alt="Fast delivery pictogram">
+                            <figcaption>All day availability</figcaption>
+                        </figure>
+                        <p> Monday-friday from 9am-11pm. </p>
+                    </div>
+                </div>
+                <div class="price">
+                    <div class="content">
+                        <figure>
+                            <img src= "https://cdn-icons-png.flaticon.com/512/3501/3501896.png" alt="Fast delivery pictogram">
+                            <figcaption>Lowest prices</figcaption>
+                        </figure>
+                        <p> We will guarantee the best prices!</p>
+                    </div>
+                </div>
+                <div class="shops">
+                    <div class="content">
+                        <figure>
+                            <img src= "https://cdn-icons-png.flaticon.com/512/905/905908.png" alt="Fast delivery pictogram">
+                            <figcaption>Visit our store</figcaption>
+                        </figure>
+                        <p> Test before buying? Come visit us!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+                <ul class="list">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy statement</a></li>
+                    <li><a href="#">Return policy</a></li>
+                </ul>     
+        </footer>
+    </body>
+</html>
